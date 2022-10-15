@@ -41,22 +41,21 @@ public class Prac {
 class MergeSort<E extends Comparable<E>> {
     void mergeSort(ArrayList<E> arrayList) {
         if (arrayList.size() > 1) {
-            E cursor = arrayList.get(0);
+            E cursor = arrayList.get(arrayList.size()/2);
             ArrayList<E> arrayListRight = new ArrayList<>();
             ArrayList<E> arrayListLeft = new ArrayList<>();
-            for (int i = 1; i < arrayList.size(); i++) {
-                E e = arrayList.get(i);
-                if (e.compareTo(cursor) < 0) {
-                    arrayListLeft.add(e);
+            for (int i = 0; i < arrayList.size(); i++) {
+                if(i!=arrayList.size()/2)
+                if (arrayList.get(i).compareTo(cursor) < 0) {
+                    arrayListLeft.add(arrayList.get(i));
                 } else {
-                    arrayListRight.add(e);
+                    arrayListRight.add(arrayList.get(i));
                 }
             }
             mergeSort(arrayListLeft);
             mergeSort(arrayListRight);
             arrayListLeft.add(cursor);
             arrayListLeft.addAll(arrayListRight);
-
             arrayList.clear();
             arrayList.addAll(arrayListLeft);
         }
