@@ -41,23 +41,30 @@ public class Prac {
 class MergeSort<E extends Comparable<E>> {
     void mergeSort(ArrayList<E> arrayList) {
         if (arrayList.size() > 1) {
-            E cursor = arrayList.get(arrayList.size()/2);
-            ArrayList<E> arrayListRight = new ArrayList<>();
-            ArrayList<E> arrayListLeft = new ArrayList<>();
-            for (int i = 0; i < arrayList.size(); i++) {
-                if(i!=arrayList.size()/2)
-                if (arrayList.get(i).compareTo(cursor) < 0) {
-                    arrayListLeft.add(arrayList.get(i));
-                } else {
-                    arrayListRight.add(arrayList.get(i));
-                }
-            }
+            ArrayList<E> arrayListLeft = new ArrayList<>(arrayList.subList(0, arrayList.size() / 2));
+            ArrayList<E> arrayListRight = new ArrayList<>(arrayList.subList(arrayList.size() / 2, arrayList.size()));
             mergeSort(arrayListLeft);
             mergeSort(arrayListRight);
-            arrayListLeft.add(cursor);
-            arrayListLeft.addAll(arrayListRight);
+            int l = 0;
+            int r = 0;
             arrayList.clear();
-            arrayList.addAll(arrayListLeft);
+            for (int i = 0; i < arrayListLeft.size() + arrayListRight.size(); i++) {
+                if (l != arrayListLeft.size() && r != arrayListRight.size() && arrayListLeft.get(l).compareTo(arrayListRight.get(r)) < 0) {
+                    arrayList.add(i, arrayListLeft.get(l));
+                    l++;
+                } else if (l != arrayListLeft.size() && r != arrayListRight.size()) {
+                    arrayList.add(i, arrayListRight.get(r));
+                    r++;
+                }
+                if (l == arrayListLeft.size() && l != 0) {
+                    arrayList.addAll(arrayListRight.subList(r, arrayListRight.size()));
+                    break;
+                } else if (r == arrayListRight.size() && r != 0) {
+                    arrayList.addAll(arrayListLeft.subList(l, arrayListLeft.size()));
+                    break;
+                }
+
+            }
         }
     }
 }
