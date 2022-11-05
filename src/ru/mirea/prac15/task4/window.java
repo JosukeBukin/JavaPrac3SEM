@@ -1,4 +1,4 @@
-package ru.mirea.prac15;
+package ru.mirea.prac15.task4;
 
 import javax.swing.*;
 import java.awt.*;

@@ -1,4 +1,4 @@
-package ru.mirea.prac15;
+package ru.mirea.prac15.task1;
 
 
 import javax.swing.*;

@@ -1,4 +1,4 @@
-package ru.mirea.prac15;
+package ru.mirea.prac15.task2;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

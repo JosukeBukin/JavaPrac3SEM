@@ -1,9 +1,7 @@
-package ru.mirea.prac15;
+package ru.mirea.prac15.task3;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class menu_bar extends JFrame {
     public static void main(String[] args){
@@ -15,10 +13,10 @@ public class menu_bar extends JFrame {
         jMenuBar.add(HelpMenuFile());
         jMenuBar.setSize(100, 25);
 
-        JButton jButton_1 = new JButton(Button 1);
+        JButton jButton_1 = new JButton("Button 1");
         jButton_1.setBounds(20, 70, 90, 20);
 
-        JButton jButton_2 = new JButton(Button 2);
+        JButton jButton_2 = new JButton("Button 2");
         jButton_2.setBounds(130, 70, 90, 20);
 
         jFrame.add(jMenuBar);
@@ -32,9 +30,9 @@ public class menu_bar extends JFrame {
     }
 
     private static JMenu createFileMenu(){
-        JMenu file = new JMenu(File);
-        JMenuItem save = new JMenuItem(Save);
-        JMenuItem exit = new JMenuItem(Exit);
+        JMenu file = new JMenu("File");
+        JMenuItem save = new JMenuItem("Save");
+        JMenuItem exit = new JMenuItem("Exit");
         file.add(save);
         file.addSeparator();
         file.add(exit);
@@ -42,10 +40,10 @@ public class menu_bar extends JFrame {
     }
 
     private static JMenu EditFileMenu(){
-        JMenu file = new JMenu(Edit);
-        JMenuItem copy = new JMenuItem(Cope);
-        JMenuItem cut = new JMenuItem(Cut);
-        JMenuItem insert = new JMenuItem(Insert);
+        JMenu file = new JMenu("Edit");
+        JMenuItem copy = new JMenuItem("Cope");
+        JMenuItem cut = new JMenuItem("Cut");
+        JMenuItem insert = new JMenuItem("Insert");
         file.add(copy);
         file.addSeparator();
         file.add(cut);
@@ -55,7 +53,7 @@ public class menu_bar extends JFrame {
     }
 
     private static JMenu HelpMenuFile(){
-        JMenu file = new JMenu(Edit);
+        JMenu file = new JMenu("Edit");
         return file;
     }
 }
