@@ -123,7 +123,7 @@
 <tbody>
 <tr>
 <td class="org-right">15</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Готово</td>
 </tr>
 </tbody>
 
