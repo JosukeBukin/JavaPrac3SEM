@@ -81,35 +81,35 @@
 <tbody>
 <tr>
 <td class="org-right">9</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Готово</td>
 </tr>
 </tbody>
 
 <tbody>
 <tr>
 <td class="org-right">10</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Готово</td>
 </tr>
 </tbody>
 
 <tbody>
 <tr>
 <td class="org-right">11</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Готово</td>
 </tr>
 </tbody>
 
 <tbody>
 <tr>
 <td class="org-right">12</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Готово</td>
 </tr>
 </tbody>
 
 <tbody>
 <tr>
 <td class="org-right">13</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Готово</td>
 </tr>
 </tbody>
 
@@ -137,7 +137,7 @@
 <tbody>
 <tr>
 <td class="org-right">17</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Готово</td>
 </tr>
 </tbody>
 
