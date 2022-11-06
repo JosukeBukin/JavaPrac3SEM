@@ -179,7 +179,7 @@
 <tbody>
 <tr>
 <td class="org-right">23</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Готово</td>
 </tr>
 </tbody>
 
