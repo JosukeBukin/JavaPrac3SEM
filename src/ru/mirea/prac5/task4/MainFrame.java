@@ -1,7 +1,5 @@
 package ru.mirea.prac5.task4;
 
-// TODO: Добавьте 4 пикчи формата png. Назовите 1, 2, 3, 4
-
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;

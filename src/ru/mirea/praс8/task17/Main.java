@@ -1,7 +1,5 @@
 package ru.mirea.praс8.task17;
 
-//TODO: Добавить остальные варианты. По условию у вас должно быть точно ОДИН варинт соотв. вашему списку
-
 import java.util.Scanner;
 
 public class Main {
