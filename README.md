@@ -186,7 +186,7 @@
 <tbody>
 <tr>
 <td class="org-right">24</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Готово</td>
 </tr>
 </tbody>
 
