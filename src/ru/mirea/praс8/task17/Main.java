@@ -10,7 +10,7 @@ public class Main {
         if(number > 0) {
             max = findMax();
         }
-        return number > max ? number:max;
+        return Math.max(number, max);
     }
 
     public static void main(String[] args) {

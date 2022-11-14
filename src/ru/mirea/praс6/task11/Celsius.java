@@ -1,7 +1,7 @@
 package ru.mirea.praс6.task11;
 
 public class Celsius implements Convertable {
-    private double value;
+    private final double value;
 
     public Celsius(double value) {
         this.value = value;

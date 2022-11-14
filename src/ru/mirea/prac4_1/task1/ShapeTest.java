@@ -5,8 +5,8 @@ class ShapeTest {
         Shape circle = new Circle();
         Shape rectangle = new Rectangle();
         Shape square = new Square();
-        System.out.println(circle.toString());
-        System.out.println(rectangle.toString());
-        System.out.println(square.toString());
+        System.out.println(circle);
+        System.out.println(rectangle);
+        System.out.println(square);
     }
 }

@@ -39,7 +39,8 @@ class LabClassUI extends JFrame {
                     ex.printStackTrace();
                 }
             } else {
-                Student nStudent = new Student(searchingSurNameTextField.getText(), searchingFirstNameTextField.getText(), searchingMiddleNameTextField.getText());
+                Student nStudent = new Student(searchingSurNameTextField.getText(),
+                        searchingFirstNameTextField.getText(), searchingMiddleNameTextField.getText());
                 if (students.contains(nStudent)) {
                     model.clear();
                     for (Student student : students) {

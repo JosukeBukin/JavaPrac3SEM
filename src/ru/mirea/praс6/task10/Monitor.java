@@ -3,8 +3,8 @@ package ru.mirea.praс6.task10;
 import java.util.Objects;
 
 public class Monitor {
-    private int size;
-    private int hertz;
+    private final int size;
+    private final int hertz;
 
     public Monitor(int size, int hertz) {
         this.size = size;

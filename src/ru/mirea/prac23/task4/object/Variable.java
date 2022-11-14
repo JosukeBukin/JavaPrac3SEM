@@ -1,6 +1,7 @@
-package object;
+package ru.mirea.prac23.task4.object;
 
-import expression.TripleExpression;
+
+import ru.mirea.prac23.task4.expression.TripleExpression;
 
 public class Variable implements TripleExpression {
     private final String name;

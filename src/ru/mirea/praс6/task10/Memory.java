@@ -3,7 +3,7 @@ package ru.mirea.praс6.task10;
 import java.util.Objects;
 
 public class Memory {
-    private int volume;
+    private final int volume;
 
     public Memory(int volume) {
         this.volume = volume;

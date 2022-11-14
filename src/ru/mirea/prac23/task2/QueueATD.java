@@ -1,6 +1,6 @@
-package Java23;
+package ru.mirea.prac23.task2;
 
 public interface QueueATD {
-    public void enqueue(int n);
-    public int dequeue();
+    void enqueue(int n);
+    int dequeue();
 }

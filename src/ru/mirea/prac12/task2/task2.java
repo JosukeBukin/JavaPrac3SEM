@@ -1,21 +1,22 @@
 package ru.mirea.prac12.task2;
 
 import javax.swing.*;
+import java.util.Objects;
 
 public class task2 extends JFrame {
-    private JLabel window;
+    private final JLabel window;
     String randomImage = "1.jpg";
     private task2()
     {
         super("Какая-то картинка");
         setSize(1200, 1200);
-        window = new JLabel("", new ImageIcon(getClass().getResource("")), SwingConstants.CENTER);
+        window = new JLabel("", new ImageIcon(Objects.requireNonNull(getClass().getResource(""))), SwingConstants.CENTER);
         getContentPane().add(window);
     }
 
     public void setImg(String prac)
     {
-        window.setIcon(new ImageIcon(getClass().getResource((prac))));
+        window.setIcon(new ImageIcon(Objects.requireNonNull(getClass().getResource((prac)))));
     }
 
     public static void main(String[] args)

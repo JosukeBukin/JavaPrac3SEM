@@ -1,4 +1,4 @@
-package Task_17_1_Student;
+package ru.mirea.prac_17.Task_17_1_Student;
 
 public class StudentView {
     public void printStudentDetails(String name, String rollNo){

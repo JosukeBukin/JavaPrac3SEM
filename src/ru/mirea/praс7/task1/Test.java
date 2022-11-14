@@ -5,6 +5,6 @@ public class Test {
         MovableRectangle rectangle = new MovableRectangle(0, 0,2,2);
         rectangle.moveDown(5.55);
         rectangle.moveRight(4.56);
-        System.out.println(rectangle.toString());
+        System.out.println(rectangle);
     }
 }

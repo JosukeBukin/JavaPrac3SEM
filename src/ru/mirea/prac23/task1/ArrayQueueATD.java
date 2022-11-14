@@ -1,13 +1,11 @@
-package Java23;
+package ru.mirea.prac23.task1;
 
 class ArrayQueueATD {
-    private int maxSize = 15; // максимальное количество элементов в очереди
-    private int[] queue = new int[maxSize];
+    private final int maxSize = 15; // максимальное количество элементов в очереди
+    private final int[] queue = new int[maxSize];
     private int nElem = 0;  // текущее количество элементов в очереди
     private int front = 0;
     private int rear = -1;
-
-
     public static void enqueue(ArrayQueueATD queue, int elem) {
         if (queue.nElem == queue.maxSize){
             System.out.println("Queue is full");
@@ -16,19 +14,16 @@ class ArrayQueueATD {
         if (queue.rear == queue.maxSize - 1) {  // циклический перенос
             queue.rear = -1;
         }
-
         queue.queue[++queue.rear] = elem;  //увеличение Rear и вставка
         queue.nElem++;  // увеличение количества элементов в очереди
     }
     public static int dequeue(ArrayQueueATD queue) {
         int temp = queue.queue[queue.front++]; // получаем первый элемент из очереди
-
         if (queue.front == queue.maxSize) { // циклический перенос
             queue.front = 0;
         }
         queue.nElem--; // уменьшаем количество элементов в очереди
         return temp;
-
     }
     public static int element(ArrayQueueATD queue) {
         return queue.queue[queue.front];

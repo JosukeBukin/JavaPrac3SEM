@@ -1,8 +1,8 @@
-package operation.checked;
+package ru.mirea.prac23.task4.operation.checked;
 
-import exceptions.ArithmeticParserException;
-import expression.TripleExpression;
-import operation.BinaryOperation;
+import ru.mirea.prac23.task4.exceptions.ArithmeticParserException;
+import ru.mirea.prac23.task4.expression.TripleExpression;
+import ru.mirea.prac23.task4.operation.BinaryOperation;
 
 
 public class CheckedMultiply extends BinaryOperation {

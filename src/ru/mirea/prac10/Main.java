@@ -28,7 +28,7 @@ class SortingStudentByGPA implements Comparator<Student> {
             idNumber[i].setSpecialty(in.nextLine());
             System.out.print("Введите средний балл студента: ");
             gpa_inp = in.nextDouble();
-            idNumber[i].setGPA(gpa_inp);
+            idNumber[i].setGpa(gpa_inp);
             in.nextLine();
             System.out.println();
         }
@@ -36,7 +36,10 @@ class SortingStudentByGPA implements Comparator<Student> {
 
     public void outArray() {
         for (int i = size -1; i >= 0; i--) {
-            System.out.println(idNumber[i].getName() + " " + idNumber[i].getSurname() + " " + idNumber[i].getCourse() + " " + idNumber[i].getGroup() + " " + idNumber[i].getSpecialty() + "  " + idNumber[i].getGPA());
+            System.out.println(idNumber[i].getName() + " " +
+                    idNumber[i].getSurname() + " " + idNumber[i].getCourse() +
+                    " " + idNumber[i].getGroup() + " " + idNumber[i].getSpecialty() +
+                    " " + idNumber[i].getGpa());
         }
     }
 
@@ -44,13 +47,13 @@ class SortingStudentByGPA implements Comparator<Student> {
     public void quicksort(int low, int high) {
         if (low >= high) return;
         int middle = low + (high - low) / 2;
-        double base = idNumber[middle].getGPA();
+        double base = idNumber[middle].getGpa();
         int i = low, j = high;
         while (i <= j) {
-            while (idNumber[i].getGPA() < base) {
+            while (idNumber[i].getGpa() < base) {
                 i++;
             }
-            while (idNumber[j].getGPA() > base) {
+            while (idNumber[j].getGpa() > base) {
                 j--;
             }
             if (i <= j) {
@@ -66,7 +69,7 @@ class SortingStudentByGPA implements Comparator<Student> {
     }
 
     @Override
-    public void insertsortByGPA()
+    public void insertSortByGPA()
     {
         int prev, now;
         Student temp;
@@ -74,7 +77,7 @@ class SortingStudentByGPA implements Comparator<Student> {
         {
             prev = i - 1;
             now = i;
-            while (prev >= 0 && idNumber[prev].getGPA() > idNumber[now].getGPA())
+            while (prev >= 0 && idNumber[prev].getGpa() > idNumber[now].getGpa())
             {
                 temp = idNumber[now];
                 idNumber[i] = idNumber[prev];
@@ -86,7 +89,7 @@ class SortingStudentByGPA implements Comparator<Student> {
     }
 
     @Override
-    public void insertsortByCourse()
+    public void insertSortByCourse()
     {
         int prev, now;
         Student temp;
@@ -131,13 +134,13 @@ public class Main {
         tester1.quicksort(0, tester1.size - 1);
         tester1.outArray();
         System.out.println("Отсортируем второй список вставками по курсу");
-        tester2.insertsortByCourse();
+        tester2.insertSortByCourse();
         tester2.outArray();
         System.out.println("Объединим списки");
         tester1.extendArray(tester2.idNumber);
         tester1.outArray();
         System.out.println("Отсортируем полученый список вставками по среднему баллу");
-        tester1.insertsortByGPA();
+        tester1.insertSortByGPA();
         tester1.outArray();
     }
 }

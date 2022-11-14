@@ -1,4 +1,4 @@
-package Task_17_2_Employee;
+package ru.mirea.prac_17.Task_17_2_Employee;
 
 public class Main_Employee {
     public static void main(String[] args){
@@ -7,7 +7,7 @@ public class Main_Employee {
         EmployeeView view = new EmployeeView();
         EmployeeController controller = new EmployeeController(model, view);
 
-        controller.printInfo();
+        controller.updateView();
     }
 
     private static Employee retriveFromDB(){ // "извлечение из базы данных"

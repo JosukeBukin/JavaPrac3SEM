@@ -1,7 +1,7 @@
-package ru.mirea.lab4;
+package ru.mirea.praс6.task3;
 
 public class Dog implements Nameable {
-    private String name;
+    private final String name;
 
     public Dog(String name) {
         this.name = name;

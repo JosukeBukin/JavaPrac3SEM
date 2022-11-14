@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class CalcUI extends JFrame {
-    JButton pnl[] = new JButton[17];
+    JButton[] pnl = new JButton[17];
     GridBagConstraints cnstr = new GridBagConstraints();
     JLabel textLabel = new JLabel();
     String outText = "";

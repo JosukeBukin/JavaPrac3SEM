@@ -3,9 +3,9 @@ package ru.mirea.prac2.task6;
 public class Circle {
     private int r;
 
-    private int i = 0;
+    private final int i = 0;
 
-    private Circle[] circle = new Circle[2];
+    private final Circle[] circle = new Circle[2];
     private final double PI = 3.14;
 
     public Circle(int r){

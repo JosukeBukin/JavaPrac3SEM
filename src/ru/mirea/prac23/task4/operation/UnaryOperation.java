@@ -1,7 +1,7 @@
-package operation;
+package ru.mirea.prac23.task4.operation;
 
 
-import expression.TripleExpression;
+import ru.mirea.prac23.task4.expression.TripleExpression;
 
 public abstract class UnaryOperation implements TripleExpression {
     private final TripleExpression object;

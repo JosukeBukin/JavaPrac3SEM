@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class Shop{
     private static int i = 0;
 
-    private String address;
-    private String working_hours;
+    private final String address;
+    private final String working_hours;
     public ArrayList<Computer> warehouse = new ArrayList<>();
 
     public Shop(String address, String working_hours){

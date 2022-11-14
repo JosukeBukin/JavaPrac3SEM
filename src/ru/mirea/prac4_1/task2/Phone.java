@@ -1,8 +1,8 @@
 package ru.mirea.prac4_1.task2;
 
 public class Phone {
-    private int number;
-    private String model;
+    private final int number;
+    private final String model;
     private int weight;
 
     public Phone(int number, String model) {

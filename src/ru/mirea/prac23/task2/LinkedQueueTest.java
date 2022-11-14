@@ -1,4 +1,4 @@
-package Java23;
+package ru.mirea.prac23.task2;
 
 public class LinkedQueueTest {
     public static void main(String[] args)

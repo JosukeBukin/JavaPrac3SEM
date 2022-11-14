@@ -1,5 +1,5 @@
-package ru.mirea.lab4;
+package ru.mirea.praс6.task3;
 
 public interface Nameable {
-    public String getName();
+    String getName();
 }

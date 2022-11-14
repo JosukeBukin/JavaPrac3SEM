@@ -6,9 +6,9 @@ class PhoneTest {
         Phone phone2 = new Phone(123456, "m");
         Phone phone3 = new Phone();
 
-        System.out.println(phone1.toString());
-        System.out.println(phone2.toString());
-        System.out.println(phone3.toString());
+        System.out.println(phone1);
+        System.out.println(phone2);
+        System.out.println(phone3);
 
         System.out.println(phone1.getNumber());
         System.out.println(phone2.getNumber());

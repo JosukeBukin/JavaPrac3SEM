@@ -1,6 +1,6 @@
-package object;
+package ru.mirea.prac23.task3.object;
 
-import expression.Expression;
+import ru.mirea.prac23.task3.expression.Expression;
 
 
 public class Const implements Expression {

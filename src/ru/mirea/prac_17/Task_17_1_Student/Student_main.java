@@ -1,25 +1,22 @@
-package Task_17_1_Student;
+package ru.mirea.prac_17.Task_17_1_Student;
 
 public class Student_main {
 
     public static void main(String[] args) {
-        //Контроллер используют model и view
-        Student model = retriveFromDB();
+        Student model = retrieveStudentFromDB();
         StudentView view = new StudentView();
         StudentController controller = new StudentController(model, view);
 
-        controller.printInfo(); //Выводится инфа в первый раз
-
-        controller.setStudentRollNo("00001"); //можно изменить
+        controller.updateView();
+        controller.setStudentRollNo("Bebey");
         System.out.println("After updating:");
-        controller.printInfo(); //Выводится инфа после изменения
-
+        controller.updateView();
     }
 
-    private static Student retriveFromDB(){ // "извлечение из базы данных"
+    private static Student retrieveStudentFromDB(){
         Student student = new Student();
-        student.setName("Jason Statham"); //можно изменить
-        student.setRollNo("258"); //можно изменить
+        student.setName("Scala ne pridymal"); //можно изменить
+        student.setRollNo("bruh"); //можно изменить
         return student;
     }
 }

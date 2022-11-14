@@ -13,9 +13,9 @@ class Animal {}
 class Dog extends Animal implements Serializable {}
 
 class Hell<T extends Comparable<T>, V extends Animal & Serializable, K> {
-    private T id;
-    private V key;
-    private K hash;
+    private final T id;
+    private final V key;
+    private final K hash;
     Hell(T id, V key, K hash) {
         this.id = id;
         this.key = key;

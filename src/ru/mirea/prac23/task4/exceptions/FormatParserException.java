@@ -1,4 +1,4 @@
-package exceptions;
+package ru.mirea.prac23.task4.exceptions;
 
 
 public class FormatParserException extends Exception {

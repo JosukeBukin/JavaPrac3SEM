@@ -1,7 +1,7 @@
-package Paradigm.operation.unchecked;
+package ru.mirea.prac23.task4.operation.unchecked;
 
-import Paradigm.expression.TripleExpression;
-import Paradigm.operation.Operation;
+import ru.mirea.prac23.task4.expression.TripleExpression;
+import ru.mirea.prac23.task4.operation.Operation;
 
 public class Add extends Operation {
     public Add(TripleExpression left, TripleExpression right) {

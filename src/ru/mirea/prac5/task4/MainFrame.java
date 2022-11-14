@@ -10,7 +10,7 @@ import javax.swing.WindowConstants;
 
 public class MainFrame extends JFrame {
 
-    private JLabel imgLabel;
+    private final JLabel imgLabel;
     private int imgNum = 1;
 
     private MainFrame(){

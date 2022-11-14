@@ -107,14 +107,9 @@ public class task1 extends JFrame {
         Image img = Toolkit.getDefaultToolkit().getImage(this.background_image_path);
         g.drawImage(img, 0, 0, WINDOW_WIDTH, WINDOW_HEIGHT, this);
 
-        switch (this.method) {
-            case 0:
-                animate(20, g);
-                this.method += 1;
-                break;
-
-            default:
-                break;
+        if (this.method == 0) {
+            animate(20, g);
+            this.method += 1;
         }
     }
 
@@ -126,26 +121,12 @@ public class task1 extends JFrame {
         Oval oval = new Oval();
         while (n > 0) {
             int choice = (int) (Math.random() * 4);
-
             switch (choice) {
-                case 1:
-                    circle.paint(g);
-                    n -= 1;
-                    break;
-                case 2:
-                    rect.paint(g);
-                    n -= 1;
-                    break;
-                case 3:
-                    roundedRect.paint(g);
-                    n -= 1;
-                    break;
-                case 4:
-                    oval.paint(g);
-                    n -= 1;
-                    break;
-                default:
-                    break;
+                case 1: circle.paint(g);n -= 1;break;
+                case 2: rect.paint(g);n -= 1;break;
+                case 3: roundedRect.paint(g);n -= 1;break;
+                case 4: oval.paint(g); n -= 1;break;
+                default: break;
             }
         }
     }

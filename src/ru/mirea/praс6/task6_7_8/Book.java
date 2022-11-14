@@ -1,9 +1,9 @@
 package ru.mirea.praс6.task6_7_8;
 
 public class Book implements Printable {
-    private String title;
-    private String author;
-    private int year;
+    private final String title;
+    private final String author;
+    private final int year;
     public Book(String title, String author, int year) {
         this.title = title;
         this.author = author;

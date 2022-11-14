@@ -1,4 +1,4 @@
-package Java23;
+package ru.mirea.prac23.task1;
 
 public class ArrayQueueTest {
     public static void fill(ArrayQueue queue){
@@ -7,7 +7,7 @@ public class ArrayQueueTest {
         }
     }
     public static  void dump(ArrayQueue queue){
-        while (queue.isEmpty() == false){
+        while (!queue.isEmpty()){
             System.out.println(queue.size() + " " + queue.dequeue());
         }
     }

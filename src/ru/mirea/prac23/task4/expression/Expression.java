@@ -1,4 +1,4 @@
-package expression;
+package ru.mirea.prac23.task4.expression;
 
-public interface Expression extends expression.TripleExpression {
+public interface Expression extends TripleExpression {
 }

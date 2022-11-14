@@ -15,8 +15,8 @@ public class Task {
             public String getDescription() { return "warm season"; }
         };
 
-        private double temperature;
-        private Seasons(double temperature){
+        private final double temperature;
+        Seasons(double temperature){
             this.temperature = temperature;
         }
 
