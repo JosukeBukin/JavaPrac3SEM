@@ -8,30 +8,25 @@ public class Prac {
 }
 
 class Hell <T extends Comparable,V,K>{
-
-    private T id;
-    private V key;
-    private K hash;
-
+    private final T id;
+    private final V key;
+    private final K hash;
     Hell(T id,V key,K hash){
         this.id = id;
         this.key = key;
         this.hash = hash;
     }
-
     public T getId() {
         return id;
     }
-
     public V getKey() {
         return key;
     }
-
     public K getHash() {
         return hash;
     }
-
     public void printTypesNames(){
-        System.out.println(getId().getClass().getTypeName()+" "+getKey().getClass().getTypeName()+" "+getHash().getClass().getTypeName());
+        System.out.println(getId().getClass().getTypeName()+" "+
+                getKey().getClass().getTypeName()+" "+getHash().getClass().getTypeName());
     }
 }

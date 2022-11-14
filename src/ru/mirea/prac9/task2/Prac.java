@@ -9,26 +9,13 @@ public class Prac {
 
 
     public static void main(String[] args) {
-        students.add(new Student(12));
-        students.add(new Student(145));
-        students.add(new Student(122));
-        students.add(new Student(1));
-        students.add(new Student(4));
-        students.add(new Student(64));
-        students.add(new Student(83));
-        students.add(new Student(45));
-        students.add(new Student(42));
-        students.add(new Student(76));
-        students.add(new Student(1001));
-        students.add(new Student(100));
-        students.add(new Student(129));
-        students.add(new Student(128));
+        for (int i = 0; i < 40; i++) {
+            students.add(new Student((int) (Math.random()*100)));
+        }
         sortingStudentsByGPA.quickSort(students, 0, students.size() - 1);
-
         for (int i = students.size()-1  ;i>=0;i--) {
             System.out.println(students.get(i).getId());
         }
-
     }
 }
 
@@ -37,14 +24,12 @@ class SortingStudentsByGPA implements Comparator<Student> {
     public int compare(Student o1, Student o2) {
         return Integer.compare(o2.getId(), o1.getId());
     }
-
     public void quickSort(ArrayList<Student> students, int low, int high) {
         if (students.size() == 0)
             return;
 
         if (low >= high)
             return;
-
         int middle = low + (high - low) / 2;
         Student opora = students.get(middle);
         int i = low, j = high;
@@ -67,7 +52,6 @@ class SortingStudentsByGPA implements Comparator<Student> {
         }
         if (low < j)
             quickSort(students, low, j);
-
         if (high > i)
             quickSort(students, i, high);
     }

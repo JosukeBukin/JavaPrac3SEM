@@ -1,8 +1,7 @@
-// приложение сравниваюшее текущее дату и время с введенными
+package ru.mirea.prac11.src;// приложение сравниваюшее текущее дату и время с введенными
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.Scanner;
 
 public class task2 {

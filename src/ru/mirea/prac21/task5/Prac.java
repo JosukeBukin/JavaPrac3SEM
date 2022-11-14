@@ -1,5 +1,6 @@
 package ru.mirea.prac21.task5;
 
+
 import java.util.*;
 
 class Prac{
@@ -30,7 +31,7 @@ class Solution <T,V,K>{
         return new HashSet<>(Arrays.asList(t));
     }
 
-    public static <K,V> HashMap<K,V> newHashSet(List<? extends K> keys,List<? extends V> values){
+    public static <K,V> HashMap<K,V> newHashSet(List<? extends K> keys, List<? extends V> values){
         HashMap<K,V> result = new HashMap<>();
         for (int i = 0; i < keys.size(); i++) {
             result.put(keys.get(i),values.get(i) );

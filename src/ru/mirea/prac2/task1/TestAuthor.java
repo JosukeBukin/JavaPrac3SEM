@@ -13,7 +13,7 @@ public class TestAuthor {
         char gender = source.next().charAt(0);
         Author author = new Author(name, email, gender);
         System.out.println("toString test");
-        System.out.println(author.toString());
+        System.out.println(author);
         author.setEmail("setEmail@gmail.com");
         author.setName("setName");
         System.out.println("getName test: " + author.getName());

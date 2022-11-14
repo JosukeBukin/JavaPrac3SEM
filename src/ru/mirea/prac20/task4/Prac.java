@@ -1,5 +1,4 @@
 package ru.mirea.prac20.task4;
-
 public class Prac {
     public static void main(String[] args) {
         Human lol = new Human(69);
@@ -12,15 +11,11 @@ public class Prac {
         System.out.println(Calculator.sum(12L, -4));
     }
 }
-
 class Human implements Comparable<Human> {
     private int age = 0;
-
     public Human(int age) {
         this.age = age;
     }
-
-
     @Override
     public int compareTo(Human o) {
         if (o.age > this.age) {
@@ -29,7 +24,6 @@ class Human implements Comparable<Human> {
             return -1;
         }
     }
-
     @Override
     public String toString() {
         return "Human{" +
@@ -37,14 +31,11 @@ class Human implements Comparable<Human> {
                 '}';
     }
 }
-
 class MinMax<E extends Comparable<E>> {
     private final E[] array;
-
     MinMax(E[] array) {
         this.array = array;
     }
-
     E findMin() {
         E element = array[0];
         for (E e : array) {
@@ -53,7 +44,6 @@ class MinMax<E extends Comparable<E>> {
         }
         return element;
     }
-
     E findMax() {
         E element = array[0];
         for (E e : array) {
@@ -63,7 +53,6 @@ class MinMax<E extends Comparable<E>> {
         return element;
     }
 }
-
 class Calculator{
     static <S extends Number,U extends Number> double sum(S num1,U num2){
         return num1.doubleValue() + num2.doubleValue();

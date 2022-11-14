@@ -6,17 +6,18 @@ import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import javax.swing.Timer;
 import javax.swing.WindowConstants;
+import java.util.Objects;
 
 public class task3 extends JFrame {
 
-    private JLabel window;
+    private final JLabel window;
 
     private int imgNumber = 1;
 
     private task3() {
 
         this.setSize(1200, 1200);
-        window = new JLabel("", new ImageIcon(getClass().getResource("1.jpg")), SwingConstants.CENTER);
+        window = new JLabel("", new ImageIcon(Objects.requireNonNull(getClass().getResource("1.jpg"))), SwingConstants.CENTER);
 
         getContentPane().add(window);
 
@@ -26,7 +27,7 @@ public class task3 extends JFrame {
 
     public void nextImg()
     {
-        window.setIcon(new ImageIcon(getClass().getResource((++imgNumber)+ ".jpg")));
+        window.setIcon(new ImageIcon(Objects.requireNonNull(getClass().getResource((++imgNumber) + ".jpg"))));
         if(imgNumber == 5) imgNumber = 0;
     }
 

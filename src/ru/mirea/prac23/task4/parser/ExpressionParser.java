@@ -1,12 +1,11 @@
-package parser;
+package ru.mirea.prac23.task4.parser;
 
 
-import exceptions.FormatParserException;
-import expression.TripleExpression;
-import object.Const;
-import object.Variable;
-import operation.checked.*;
-
+import ru.mirea.prac23.task4.exceptions.FormatParserException;
+import ru.mirea.prac23.task4.expression.TripleExpression;
+import ru.mirea.prac23.task4.object.Const;
+import ru.mirea.prac23.task4.object.Variable;
+import ru.mirea.prac23.task4.operation.checked.*;
 
 
 public class ExpressionParser implements Parser {
@@ -147,7 +146,7 @@ public class ExpressionParser implements Parser {
                     val = Integer.parseInt(strNumber.toString());
                 } catch (NumberFormatException e) {
                     throw new FormatParserException("Illegal number at index " + firstIndex +
-                            "\n\t" + strNumber.toString());
+                            "\n\t" + strNumber);
                 }
                 return new Const(val);
         }

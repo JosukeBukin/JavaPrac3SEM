@@ -1,9 +1,7 @@
-package operation;
+package ru.mirea.prac23.task3.operation;
 
-
-import expression.Expression;
-import expression.TripleExpression;
-import expression.SingleExpression;
+import ru.mirea.prac23.task3.expression.Expression;
+import ru.mirea.prac23.task3.expression.SingleExpression;
 
 public abstract class Operation implements Expression {
     private final SingleExpression left;

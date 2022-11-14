@@ -1,6 +1,8 @@
-package ru.mirea.lab4;
+package ru.mirea.praс6.task3;
 
-public class Worker extends Person{
+import ru.mirea.praс6.task3.Person;
+
+public class Worker extends Person {
     private String place;
     public Worker(String name, String surname, String place) {
         super(name, surname);

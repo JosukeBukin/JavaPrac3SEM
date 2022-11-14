@@ -3,11 +3,11 @@ package ru.mirea.praс6.task10;
 import java.util.Objects;
 
 public class Computer {
-    private Memory memory;
-    private Monitor monitor;
-    private Processor processor;
-    private Brand brand;
-    private int cost;
+    private final Memory memory;
+    private final Monitor monitor;
+    private final Processor processor;
+    private final Brand brand;
+    private final int cost;
 
     public Memory getMemory() {
         return memory;

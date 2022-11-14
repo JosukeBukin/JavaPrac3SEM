@@ -1,7 +1,7 @@
 package ru.mirea.prac2.task3;
 
 public class Circle {
-    private Point c;
+    private final Point c;
 
     public Circle(double x, double y) {
         c = new Point(x, y);

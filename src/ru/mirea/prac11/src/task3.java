@@ -1,3 +1,5 @@
+package ru.mirea.prac11.src;
+
 public class task3 {
     private final int[] array;
 
@@ -25,8 +27,8 @@ public class task3 {
     }
 
     public void PrintScr() {
-        for (int aarray : array) {
-            System.out.print(aarray + " ");
+        for (int array : array) {
+            System.out.print(array + " ");
         }
     }
 

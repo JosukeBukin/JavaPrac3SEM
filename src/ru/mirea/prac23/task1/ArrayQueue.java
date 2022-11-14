@@ -1,12 +1,11 @@
-package Java23;
+package ru.mirea.prac23.task1;
 
 class ArrayQueue {
-    private int[] queue;
-    private int maxSize; // максимальное количество элементов в очереди
+    private final int[] queue;
+    private final int maxSize; // максимальное количество элементов в очереди
     private int nElem;  // текущее количество элементов в очереди
     private int front;
     private int rear;
-
     public ArrayQueue(int maxSize) {
         this.maxSize = maxSize;
         this.queue = new int[maxSize];
@@ -22,24 +21,20 @@ class ArrayQueue {
         if (this.rear == this.maxSize - 1) {  // циклический перенос
             this.rear = -1;
         }
-
         this.queue[++this.rear] = elem;  //увеличение Rear и вставка
         this.nElem++;  // увеличение количества элементов в очереди
     }
     public int dequeue() {
         int temp = this.queue[this.front++]; // получаем первый элемент из очереди
-
         if (this.front == this.maxSize) { // циклический перенос
             this.front = 0;
         }
         this.nElem--; // уменьшаем количество элементов в очереди
         return temp;
-
     }
     public int element() {
         return this.queue[this.front];
     }
-
     public int getRear() {
         return this.queue[this.rear];
     }
@@ -51,7 +46,6 @@ class ArrayQueue {
     public boolean isEmpty() {
         return (this.nElem == 0);
     }
-
     public int size() {
         return this.nElem;
     }

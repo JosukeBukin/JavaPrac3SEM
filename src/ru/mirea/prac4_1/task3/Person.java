@@ -1,8 +1,8 @@
 package ru.mirea.prac4_1.task3;
 
 public class Person {
-    private String fullName;
-    private int age;
+    private final String fullName;
+    private final int age;
 
     public void move(){
         System.out.printf("%s moved", fullName);

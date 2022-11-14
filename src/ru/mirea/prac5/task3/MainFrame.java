@@ -5,7 +5,7 @@ import javax.swing.*;
 
 public class MainFrame extends JFrame {
 
-    private JLabel imgLabel;
+    private final JLabel imgLabel;
 
     public MainFrame(String arg){
         this.setSize(1200, 1200);

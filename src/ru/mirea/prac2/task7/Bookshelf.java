@@ -11,7 +11,7 @@ public class Bookshelf {
         this.warehouse = new Book[0];
     }
 
-    public void setWarehouse(Book warehouse[]) {
+    public void setWarehouse(Book[] warehouse) {
         this.warehouse = warehouse;
     }
 

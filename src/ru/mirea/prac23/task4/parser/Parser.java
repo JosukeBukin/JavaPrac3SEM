@@ -1,8 +1,8 @@
-package parser;
+package ru.mirea.prac23.task4.parser;
 
 
-import exceptions.FormatParserException;
-import expression.TripleExpression;
+import ru.mirea.prac23.task4.exceptions.FormatParserException;
+import ru.mirea.prac23.task4.expression.TripleExpression;
 
 public interface Parser {
     TripleExpression parse(String expression) throws FormatParserException;

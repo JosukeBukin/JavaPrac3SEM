@@ -1,8 +1,7 @@
-package operation;
+package ru.mirea.prac23.task3.operation;
 
 
-import expression.TripleExpression;
-import expression.SingleExpression;
+import ru.mirea.prac23.task3.expression.SingleExpression;
 
 public class Subtract extends Operation {
     public Subtract(SingleExpression left, SingleExpression right) {

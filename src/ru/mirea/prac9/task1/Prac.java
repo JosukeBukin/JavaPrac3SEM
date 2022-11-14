@@ -1,7 +1,6 @@
 package ru.mirea.prac9.task1;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 
 class TestInsertionSort {

@@ -1,8 +1,8 @@
-package operation.checked;
+package ru.mirea.prac23.task4.operation.checked;
 
-import exceptions.ArithmeticParserException;
-import expression.TripleExpression;
-import operation.UnaryOperation;
+import ru.mirea.prac23.task4.exceptions.ArithmeticParserException;
+import ru.mirea.prac23.task4.expression.TripleExpression;
+import ru.mirea.prac23.task4.operation.UnaryOperation;
 
 public class CheckedSqrt extends UnaryOperation {
     public CheckedSqrt(TripleExpression object) {

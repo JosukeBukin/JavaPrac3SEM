@@ -5,7 +5,7 @@ public class Test {
         MovableRectangle rectangle = new MovableRectangle();
         rectangle.moveDown(5.55);
         rectangle.moveRight(4.56);
-        System.out.println(rectangle.toString());
+        System.out.println(rectangle);
         System.out.println("is speed equal? " + rectangle.SpeedTest());
     }
 }

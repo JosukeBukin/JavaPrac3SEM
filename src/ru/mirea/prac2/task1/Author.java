@@ -3,7 +3,7 @@ package ru.mirea.prac2.task1;
 public class Author {
     private String name;
     private String email;
-    private char gender;
+    private final char gender;
 
     public Author(String name, String email, char gender){
         this.email = email;

@@ -4,9 +4,9 @@ import ru.mirea.praс7.task1.Movable;
 import ru.mirea.praс7.task2.MovablePoint;
 
 public class MovableRectangle implements Movable {
-    private MovablePoint topLeft;
+    private final MovablePoint topLeft;
 
-    private MovablePoint bottomRight;
+    private final MovablePoint bottomRight;
 
     public MovableRectangle() {
         topLeft = new MovablePoint(0,0);

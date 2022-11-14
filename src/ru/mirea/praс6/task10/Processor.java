@@ -3,7 +3,7 @@ package ru.mirea.praс6.task10;
 import java.util.Objects;
 
 public class Processor {
-    private int clockspeed;
+    private final int clockspeed;
 
     @Override
     public String toString() {

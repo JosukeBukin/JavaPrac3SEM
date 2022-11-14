@@ -17,14 +17,14 @@ public class Main{
     }
 
     public static void main(String[] args) {
-        String array[] = new String[]{"qpweor", "1234", "5463", "8575", "qpweor"};
-        String[] newArray = (String[]) filter(array, new Filter() {
-            @Override
-            public boolean apply(Object o) {
-                String regex = "qpweor";
-                return o != regex;
-            }
+        String[] array = new String[]{"qpweor", "1234", "5463", "8575", "qpweor"};
+        String[] newArray = (String[]) filter(array, o -> {
+            String regex = "qpweor";
+            return o != regex;
         });
         System.out.print(String.join(", ", newArray));
     }
+}
+interface Filter {
+    boolean apply(Object o);
 }

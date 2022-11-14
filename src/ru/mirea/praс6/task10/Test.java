@@ -62,6 +62,6 @@ public class Test {
             in.skip("\n");
             command = in.nextLine();
         }
-        System.out.println(shop.toString());
+        System.out.println(shop);
     }
 }

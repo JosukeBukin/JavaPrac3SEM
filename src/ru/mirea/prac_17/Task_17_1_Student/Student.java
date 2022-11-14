@@ -1,4 +1,4 @@
-package Task_17_1_Student;
+package ru.mirea.prac_17.Task_17_1_Student;
 
 public class Student {
     private String rollNo;
@@ -7,15 +7,12 @@ public class Student {
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
     public String getRollNo() {
         return rollNo;
     }
-
     public void setRollNo(String rollNo) {
         this.rollNo = rollNo;
     }

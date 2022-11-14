@@ -1,69 +1,54 @@
 package ru.mirea.prac10;
 
 public class Student {
-    private String Name, Surname, Specialty, Group;
-    private int Course;
-    private double GPA;
-
-    public Student() {
-
-    }
-
+    private String name, surname, specialty, group;
+    private int course;
+    private double gpa;
     public String getName() {
-        return Name;
+        return name;
     }
-
     public void setName(String name){
-        this.Name = name;
+        this.name = name;
     }
-
     public String getSurname() {
-        return Surname;
+        return surname;
     }
-
     public void setSurname(String surname){
-        this.Surname = surname;
+        this.surname = surname;
     }
-
     public String getSpecialty() {
-        return Specialty;
+        return specialty;
     }
-
     public void setSpecialty(String specialty){
-        this.Specialty = specialty;
+        this.specialty = specialty;
     }
-
     public String getGroup() {
-        return Group;
+        return group;
     }
-
     public void setGroup(String group){
-        this.Group = group;
+        this.group = group;
     }
-
     public int getCourse() {
-        return Course;
+        return course;
     }
-
     public void setCourse(int course){
-        this.Course = course;
+        this.course = course;
     }
-
-    public double getGPA() {
-        return GPA;
+    public double getGpa() {
+        return gpa;
     }
-
-    public void setGPA(double gpa) {
-        this.GPA = gpa;
+    public void setGpa(double gpa) {
+        this.gpa = gpa;
     }
-
-    public Student(String name, String surname, int course, String group, String specialty, double gpa) {
-        Name = name;
-        Surname = surname;
-        Course = course;
-        Group = group;
-        Specialty = specialty;
-        GPA = gpa;
+    public Student(String name, String surname, int course,
+                   String group, String specialty, double gpa) {
+        this.name = name;
+        this.surname = surname;
+        this.course = course;
+        this.group = group;
+        this.specialty = specialty;
+        this.gpa = gpa;
     }
-
+    public Student() {
+    }
 }

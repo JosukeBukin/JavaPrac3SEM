@@ -11,7 +11,7 @@ public class TestBall {
         double y = source.nextDouble();
         Ball ball = new Ball(x, y);
         System.out.println("toString test");
-        System.out.println(ball.toString());
+        System.out.println(ball);
         ball.setX(1.0);
         ball.setY(1.0);
         ball.setXY(2.0, 2.0);

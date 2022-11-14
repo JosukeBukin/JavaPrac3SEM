@@ -1,8 +1,10 @@
-package ru.mirea.lab4;
+package ru.mirea.praс6.task3;
 
-public class Person implements Nameable{
-    private String name;
-    private String surname;
+import ru.mirea.praс6.task3.Nameable;
+
+public class Person implements Nameable {
+    private final String name;
+    private final String surname;
     public Person(String name, String surname) {
         this.name = name;
         this.surname = surname;

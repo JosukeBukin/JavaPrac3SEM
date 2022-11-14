@@ -1,8 +1,8 @@
 package ru.mirea.praс6.task6_7_8;
 
 public class Shop implements Printable {
-    private int cart_cost;
-    private String shop_name;
+    private final int cart_cost;
+    private final String shop_name;
 
     public Shop(int cart_cost, String shop_name) {
         this.cart_cost = cart_cost;

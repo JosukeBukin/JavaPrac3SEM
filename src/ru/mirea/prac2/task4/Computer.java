@@ -3,11 +3,11 @@ package ru.mirea.prac2.task4;
 public class Computer {
 
     public int index;
-    private String CPU;
-    private String GPU;
-    private String RAM;
+    private final String CPU;
+    private final String GPU;
+    private final String RAM;
 
-    private String SSD;
+    private final String SSD;
 
     public Computer(int index, String CPU, String GPU, String RAM, String SSD){
         this.index = index;

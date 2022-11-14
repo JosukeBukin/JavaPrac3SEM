@@ -1,5 +1,5 @@
 package ru.mirea.prac14.task1;
-
+    
 import java.util.Scanner;
 import java.util.regex.Pattern;
 

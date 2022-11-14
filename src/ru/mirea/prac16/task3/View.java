@@ -1,10 +1,8 @@
 package ru.mirea.prac16.task3;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-import java.util.Objects;
 
 public class View extends JFrame {
     public void checkInput(String[] example, String[] inputs) {
@@ -55,7 +53,6 @@ public class View extends JFrame {
                 @Override
                 public void keyTyped(KeyEvent e) {
                 }
-
                 @Override
                 public void keyPressed(KeyEvent e) {
                     if(e.getKeyCode() == KeyEvent.VK_ENTER) {
