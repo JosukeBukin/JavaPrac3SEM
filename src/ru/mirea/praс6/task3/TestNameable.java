@@ -1,4 +1,4 @@
-package ru.mirea.lab4;
+package ru.mirea.praс6.task3;
 
 public class TestNameable {
     public static void main(String[] args) {
