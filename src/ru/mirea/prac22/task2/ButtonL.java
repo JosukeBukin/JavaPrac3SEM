@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 
 public class ButtonL implements ActionListener {
     Calculator calculator;
-    public ButtonL(CalcUI calcUI, Calculator calculator){
+    public ButtonL(Calculator calculator){
         this.calculator = calculator;
     }
     @Override
