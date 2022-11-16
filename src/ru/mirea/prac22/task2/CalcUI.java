@@ -69,7 +69,7 @@ public class CalcUI extends JFrame {
 
         //Adding listener to the buttons
         for (JButton button: pnl) {
-            button.addActionListener(new ButtonL(this, calculator));
+            button.addActionListener(new ButtonL(calculator));
         }
         setVisible(true);
     }
